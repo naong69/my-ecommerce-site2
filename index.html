@@ -1823,12 +1823,13 @@
                     },
           body: JSON.stringify(config.data)
         });
+        console.log(request);
         const response = await request.json();
         console.log(response);
         return response;
     }
 
-    function submitContact(){
+    function submitContact() {
       const data = {
                       fname : document.getElementById('fname').value,
                       lname : document.getElementById('lname').value,
